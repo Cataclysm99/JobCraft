@@ -1,0 +1,51 @@
+Company: InnovateTech Solutions
+
+Position: Senior Full-Stack Developer
+
+Location: Remote (US)
+
+ABOUT THE ROLE
+InnovateTech Solutions is seeking a talented Senior Full-Stack Developer to join our growing engineering team. You will work on building and scaling our SaaS platform that helps businesses automate their workflow processes.
+
+RESPONSIBILITIES
+- Design and develop full-stack web applications using modern technologies
+- Build scalable APIs and microservices
+- Collaborate with product managers and designers to implement new features
+- Write clean, maintainable, and well-tested code
+- Mentor junior developers and contribute to code reviews
+- Participate in architectural decisions and technical planning
+- Optimize application performance and scalability
+
+REQUIREMENTS
+- 5+ years of professional software development experience
+- Strong proficiency in Python and JavaScript/TypeScript
+- Experience with React or similar modern frontend frameworks
+- Experience building RESTful APIs and microservices
+- Knowledge of cloud platforms (AWS, GCP, or Azure)
+- Experience with Docker and container orchestration
+- Strong understanding of database design (SQL and NoSQL)
+- Excellent problem-solving and communication skills
+- Bachelor's degree in Computer Science or related field
+
+PREFERRED QUALIFICATIONS
+- Experience with Django or Flask frameworks
+- Knowledge of CI/CD practices and tools
+- Experience with Kubernetes
+- Familiarity with agile development methodologies
+- Contributions to open-source projects
+
+TECHNICAL SKILLS WE USE
+- Backend: Python, Django, Flask, Node.js
+- Frontend: React, TypeScript, Redux
+- Infrastructure: AWS, Docker, Kubernetes, Terraform
+- Databases: PostgreSQL, Redis, MongoDB
+- Tools: Git, GitHub Actions, JIRA
+
+WHAT WE OFFER
+- Competitive salary and equity
+- Comprehensive health benefits
+- Remote-first culture with flexible hours
+- Professional development budget
+- Collaborative and innovative team environment
+
+InnovateTech Solutions is an equal opportunity employer committed to building a diverse and inclusive team.
