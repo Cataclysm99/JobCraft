@@ -17,12 +17,13 @@ load_dotenv()
 class CoverLetterGenerator:
     """Generate customized cover letters using langchain_openai."""
     
-    def __init__(self, api_key: str = None):
+    def __init__(self, api_key: str = None, model_name: str = "gpt-3.5-turbo"):
         """
         Initialize the cover letter generator.
         
         Args:
             api_key: OpenAI API key (optional, can use env variable)
+            model_name: OpenAI model to use (default: gpt-3.5-turbo)
         """
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not self.api_key:
@@ -30,7 +31,7 @@ class CoverLetterGenerator:
         
         self.llm = ChatOpenAI(
             temperature=0.7,
-            model_name="gpt-3.5-turbo",
+            model_name=model_name,
             openai_api_key=self.api_key
         )
     

@@ -2,6 +2,7 @@
 PDF generation utilities for resume and cover letter output.
 """
 
+import datetime
 from typing import Dict, Any
 from pathlib import Path
 from reportlab.lib.pagesizes import letter
@@ -160,7 +161,6 @@ class PDFGenerator:
         story.append(Spacer(1, 0.3*inch))
         
         # Date and company info
-        import datetime
         today = datetime.date.today().strftime("%B %d, %Y")
         story.append(Paragraph(today, self.styles['Normal']))
         story.append(Spacer(1, 0.2*inch))
@@ -236,7 +236,6 @@ class PDFGenerator:
         
         story.append(Spacer(1, 0.3*inch))
         
-        import datetime
         today = datetime.date.today().strftime("%B %d, %Y")
         story.append(Paragraph(today, self.styles['Normal']))
         story.append(Spacer(1, 0.2*inch))

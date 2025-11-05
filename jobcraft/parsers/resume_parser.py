@@ -6,7 +6,7 @@ and convert to a Python dictionary structure.
 import os
 from pathlib import Path
 from typing import Dict, Any
-import PyPDF2
+from pypdf import PdfReader
 from docx import Document
 
 
@@ -51,7 +51,7 @@ class ResumeParser:
         """Extract text from PDF file."""
         text = ""
         with open(self.file_path, 'rb') as file:
-            pdf_reader = PyPDF2.PdfReader(file)
+            pdf_reader = PdfReader(file)
             for page in pdf_reader.pages:
                 text += page.extract_text()
         return text
@@ -130,9 +130,9 @@ class ResumeParser:
                     # First few lines often contain contact info
                     if '@' in line and not resume_dict["contact"]["email"]:
                         resume_dict["contact"]["email"] = line
-                    elif 'linkedin.com' in line_lower:
+                    elif 'linkedin.com/' in line_lower and line_lower.startswith(('http://', 'https://', 'linkedin.com', 'www.')):
                         resume_dict["contact"]["linkedin"] = line
-                    elif 'github.com' in line_lower:
+                    elif 'github.com/' in line_lower and line_lower.startswith(('http://', 'https://', 'github.com', 'www.')):
                         resume_dict["contact"]["github"] = line
                     elif not resume_dict["name"] and len(line) < 50:
                         # Assume first short line is name
